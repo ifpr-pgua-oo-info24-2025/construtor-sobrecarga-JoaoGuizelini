@@ -18,8 +18,4 @@ public class Engin {
         this.potencia = potencia;
         this.tipo = tipo;
     }
-    public String toString() {
-        return "Engin [tipo=" + tipo + ", potencia=" + potencia + "]";
-    }
-    
 }

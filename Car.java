@@ -1,9 +1,9 @@
 public class Car {
-    private String marca;
-    private String modelo;
+    private String marca= null ;
+    private String modelo= null;
     private int placa;
-    private Engin motor ;
-    private Driver dirigidor;
+    private Engin motor = null;
+    private Driver dirigidor= null;
 
     public Car(String marca, String modelo, int placa, Engin motor, Driver dirigidor) {
         this.dirigidor = dirigidor;
@@ -50,8 +50,7 @@ public class Car {
     }
 
     public String toString() {
-        return "Car [marca=" + marca + ", modelo=" + modelo + ", placa=" + placa + ", motor=" + motor + ", dirigidor="
-                + dirigidor + "]";
+        return "Car [marca = " + marca + ", modelo = " + modelo + ", placa = " + placa + ", tipo motor = " + motor.getTipo() +", potencia = "+motor.getPotencia()+ ", dirigidor = "+ dirigidor.getName() + "cnh = "+ dirigidor.getCnh()+"]";
     }
     
 }
